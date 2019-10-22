@@ -1,0 +1,28 @@
+package com.etisalat.service;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class CalculatorTest {
+	
+	@BeforeClass
+	public static void beforeAllTestMethod() {
+		System.out.println("connecting to db");
+	}
+
+	@AfterClass
+	public static void afterAllTestMethod() {
+		System.out.println("connecting to db");
+	}
+	
+	@Test
+	public void testValidAdd(){
+		
+	}
+
+	@Test
+	public void testInvalidAdd(){
+		
+	}
+	
+}

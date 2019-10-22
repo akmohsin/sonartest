@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculatorTest" project="junit-basic-app" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.etisalat.service.CalculatorTest" time="0.002">
+    <testsuite name="[0]" time="0.001">
+      <testcase name="testInvalidAdd[0]" classname="com.etisalat.service.CalculatorTest" time="0.0"/>
+      <testcase name="testValidAdd[0]" classname="com.etisalat.service.CalculatorTest" time="0.001"/>
+    </testsuite>
+    <testsuite name="[1]" time="0.001">
+      <testcase name="testInvalidAdd[1]" classname="com.etisalat.service.CalculatorTest" time="0.0"/>
+      <testcase name="testValidAdd[1]" classname="com.etisalat.service.CalculatorTest" time="0.001"/>
+    </testsuite>
+  </testsuite>
+</testrun>

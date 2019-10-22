@@ -1,0 +1,32 @@
+package com.etisalat.service;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class CalculatorTest {
+	
+	@BeforeClass
+	public static void beforeAllTestMethod() {
+		System.out.println("connecting to db");
+	}
+
+	@AfterClass
+	public static void afterAllTestMethod() {
+		System.out.println("closing db");
+	}
+	
+	@Test
+	public void testValidAdd(){
+		Calculator calculator = new Calculator();
+		assertEquals(12, calculator);
+	}
+
+	@Test
+	public void testInvalidAdd(){
+		
+	}
+	
+}

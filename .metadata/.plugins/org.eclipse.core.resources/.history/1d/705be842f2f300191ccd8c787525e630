@@ -1,0 +1,53 @@
+package com.etisalat.service;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotSame;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+@RunWith(Parameterized.class)
+public class CalculatorTest {
+	
+	
+	private Integer number1;
+	private Integer number2;
+	
+	@Parameters
+	public static Collection<Object[]> data(){
+		return Arrays.asList(new Object[][] {
+				{1,2}, 
+				{3,5}
+			}); 
+	}
+	
+	@BeforeClass
+	public static void beforeAllTestMethod() {
+		System.out.println("connecting to db");
+	}
+
+	@AfterClass
+	public static void afterAllTestMethod() {
+		System.out.println("closing db");
+	}
+	
+	@Test
+	public void testValidAdd(){
+		Calculator calculator = new Calculator();
+		assertEquals(12, calculator.add(5,7));
+	}
+
+	@Test
+	public void testInvalidAdd(){
+		Calculator calculator = new Calculator();
+		assertNotSame(12, calculator.add(5,9));
+	}
+	
+}
